@@ -169,8 +169,8 @@ namespace PokerGame
         /// <summary>
         /// 转移牌
         /// </summary>
-        /// <param name="sps">牌</param>
-        /// <param name="dps">要添加到的玩家牌组</param>
+        /// <param name="sps">card</param>
+        /// <param name="dps">The player deck to add to</param>
         /// <returns></returns>
         public void TransPoker(List<Poker> sps, List<Poker> dps)
         {
@@ -178,10 +178,10 @@ namespace PokerGame
         }
 
         /// <summary>
-        /// 转移牌
+        /// Swap cards
         /// </summary>
-        /// <param name="p">牌</param>
-        /// <param name="dps">要添加到的玩家牌组</param>
+        /// <param name="p">card</param>
+        /// <param name="dps">The player deck to add to</param>
         /// <returns></returns>
         public void TransPoker(Poker p, List<Poker> dps)
         {
@@ -189,10 +189,10 @@ namespace PokerGame
         }
 
         /// <summary>
-        /// 添加牌
+        /// Add card
         /// </summary>
-        /// <param name="p">牌</param>
-        /// <param name="dps">要添加到的玩家牌组</param>
+        /// <param name="p">card</param>
+        /// <param name="dps">The player deck to add to</param>
         /// <returns></returns>
         public void AddPoker(Card c, List<Poker> dps)
         {
@@ -206,7 +206,7 @@ namespace PokerGame
         }
 
         /// <summary>
-        /// 获取一张随机牌位
+        /// get rondom position
         /// </summary>
         /// <param name="ps"></param>
         /// <returns></returns>
@@ -217,7 +217,7 @@ namespace PokerGame
         }
 
         /// <summary>
-        /// 获取未选择的牌
+        /// Get the unselected card
         /// </summary>
         /// <param name="ps"></param>
         /// <returns></returns>
@@ -227,7 +227,7 @@ namespace PokerGame
         }
 
         /// <summary>
-        /// 获取选择的牌
+        /// Get the selected card
         /// </summary>
         /// <returns></returns>
         public List<Poker> GetSelectPoker(List<Poker> ps)
@@ -236,7 +236,7 @@ namespace PokerGame
         }
 
         /// <summary>
-        /// 获取填充了牌的牌位
+        /// Gets the filled card position
         /// </summary>
         /// <returns></returns>
         public List<Poker> GetFillPokerSlot(List<Poker> ps)
@@ -245,7 +245,7 @@ namespace PokerGame
         }
 
         /// <summary>
-        /// 获取未填充牌的牌位
+        /// Gets the deck of an unfilled card
         /// </summary>
         /// <returns></returns>
         public List<Poker> GetUnFillPokerSlot(List<Poker> ps)

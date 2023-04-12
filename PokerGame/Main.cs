@@ -156,14 +156,14 @@ namespace PokerGame
                 {
                     lblStatus.Text = Game.MainLogic("End swap");
                     btnConfirm.Visible = false;
-                    lblStatus.Text = Game.MainLogic("出牌阶段");
+                    lblStatus.Text = Game.MainLogic("Throw card");
                     btnConfirm.Visible = true;
                 }
-                else if (Game.Stage == "出牌阶段")
+                else if (Game.Stage == "Throw card")
                 {
                     lblStatus.Text = Game.MainLogic("End throw card",()=>
                     {
-                        lblStatus.Text = Game.MainLogic("出牌阶段");
+                        lblStatus.Text = Game.MainLogic("Throw card");
                         btnConfirm.Visible = true;
                     });
                 }
